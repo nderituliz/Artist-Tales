@@ -1,0 +1,140 @@
+virtual/
+*.pyc
+artist_tales/settings.py
+.env{% extends 'base.html'%}
+
+{% block content %}
+
+<script>
+    function copyToClipBoard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        
+    }
+</script>
+
+<div class="card-panel" >
+    <div class="media- card">
+        <img src="{{photo.image.url}}" alt="" cover>
+        <canvas width="900" height="500"></canvas>
+    </div>
+    <div>
+        <div class="card-body card-secondary">
+            <div class="text-center card-body text-large ">
+                <h3 class="card-title" >{{photo.image_name|upper}}</h3>
+               
+                <hr>
+                <p >{{photo.image_descripton}}</p>
+                <hr>
+
+                <input class="form-control" type="text" value="{{photoimage}}" id="myInput">
+                <a onclick="copyToClipBoard()" class="button button-primary">Copy {% extends 'base.html'%}
+
+{% block content %}
+
+<script>
+    function copyToClipBoard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        
+    }
+</script>
+
+<div class="card-panel" >
+    <div class="media- card">
+        <img src="{{photo.image.url}}" alt="" cover>
+        <canvas width="900" height="500"></canvas>
+    </div>
+    <div>
+        <div class="card-body card-secondary">
+            <div class="text-center card-body text-large ">
+                <h3 class="card-title" >{{photo.image_name|upper}}</h3>
+               
+                <hr>
+                <p >{{photo.image_descripton}}</p>
+                <hr>
+
+                <input class="form-control" type="text" value="{{photoimage}}" id="myInput">
+                <a onclick="copyToClipBoard()" class="button button-primary">Copy {% extends 'base.html'%}
+
+{% block content %}
+
+<script>
+    function copyToClipBoard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        
+    }
+</script>
+
+<div class="card-panel" >
+    <div class="media- card">
+        <img src="{{photo.image.url}}" alt="" cover>
+        <canvas width="900" height="500"></canvas>
+    </div>
+    <div>
+        <div class="card-body card-secondary">
+            <div class="text-center card-body text-large ">
+                <h3 class="card-title" >{{photo.image_name|upper}}</h3>
+               
+                <hr>
+                <p >{{photo.image_descripton}}</p>
+                <hr>
+
+                <input class="form-control" type="text" value="{{photoimage}}" id="myInput">
+                <a onclick="copyToClipBoard()" class="button button-primary">Copy {% extends 'base.html'%}
+
+{% block content %}
+
+<script>
+    function copyToClipBoard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        
+    }
+</script>
+
+<div class="card-panel" >
+    <div class="media- card">
+        <img src="{{photo.image.url}}" alt="" cover>
+        <canvas width="900" height="500"></canvas>
+    </div>
+    <div>
+        <div class="card-body card-secondary">
+            <div class="text-center card-body text-large ">
+                <h3 class="card-title" >{{photo.image_name|upper}}</h3>
+               
+                <hr>
+                <p >{{photo.image_descripton}}</p>
+                <hr>
+
+                <input class="form-control" type="text" value="{{photoimage}}" id="myInput">
+                <a onclick="copyToClipBoard()" class="button button-primary">Copy Link</a>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+</div>Link</a>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+</div>Link</a>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+</div>Link</a>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+{%extends 'base.html'%}
+{% block content %}
+{{block.super}}
+<div class="container">
+  <!--looping through displays-->
+  <div class="row">
+    <!-- displaying all images -->
+    {% for display_item in photos %}
+    <div class="col-md-4">
+      <div class="card">
+        <div class="view overlay">
+          <a data-toggle='modal' data-target="#id{{display_item.id}}">
+            <img src="{{display_item.images.url}}" class="card-img-top img-responsive styled img-thumbnail " alt="" width="50%"
+              height="100">
+          </a>
+        </div>
+      </div>
+      <div class="modal fade" id="id{{display_item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog .modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{display_item.name}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="{{display_item.images.url}}" class="img-fluid" alt="image">
+            </div>
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col-sm">Description: {{display_item.description}}</div>
+                <div class="col-sm">Location: {{display_item.location}}</div>
+                <div class="col-sm">Category: {{display_item.category}}</div>
+              </div>
+              <input class="form-control input-lg" type="text" value="{{display_item.images.url}}" id="{{images.id}}.url">
+              <button type="button" class="btn btn-dark" onclick="copy('{{images.id}}.url')">Copy Link</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <h1 class="text-center text-info">There No Display Items</h1>
+  </div>
+  {% endfor %}
+</div>
+<script>
+  function copy() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    document.execCommand("Copy");
+    alert("Copied the link: " + copyText.value);
+  }
+</script>
+{% endblock %}
