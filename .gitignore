@@ -1,6 +1,5 @@
 virtual/
 *.pyc
-artist_tales/settings.py
 .env{% extends 'base.html'%}
 
 {% block content %}
